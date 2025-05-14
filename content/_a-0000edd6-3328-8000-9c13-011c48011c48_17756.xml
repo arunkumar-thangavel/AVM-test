@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
+    <versionUuid>_a-0000edd6-3328-8000-9c13-011c48011c48_17767</versionUuid>
+    <interface>
+        <name>PU_testUserPreference</name>
+        <uuid>_a-0000edd6-3328-8000-9c13-011c48011c48_17756</uuid>
+        <description></description>
+        <parentUuid>8cbca523-d8b5-44a5-91c4-8b012f4ad1bb</parentUuid>
+        <visibility>
+            <advertise>false</advertise>
+            <hierarchy>true</hierarchy>
+            <indexable>true</indexable>
+            <quota>false</quota>
+            <searchable>true</searchable>
+            <system>false</system>
+            <unlogged>false</unlogged>
+        </visibility>
+        <definition>load(
+  local!userPreferences: {
+    locale: userprofile(loggedInUser(), "locale"),
+    timeZone: userprofile(loggedInUser(), "timeZone"),
+    calendar: userprofile(loggedInUser(), "calendar")
+  },
+
+  #"SYSTEM_SYSRULES_sectionLayout_v1"(
+    label: "User Preferences",
+    contents: {
+      #"SYSTEM_SYSRULES_textField"(
+        label: "Locale",
+        value: local!userPreferences.locale,
+        readOnly: true()
+      ),
+      #"SYSTEM_SYSRULES_textField"(
+        label: "Time Zone",
+        value: local!userPreferences.timeZone,
+        readOnly: true()
+      ),
+      #"SYSTEM_SYSRULES_textField"(
+        label: "Calendar",
+        value: local!userPreferences.calendar,
+        readOnly: true()
+      )
+    }
+  )
+)
+</definition>
+        <preferredEditor>interface</preferredEditor>
+        <offlineEnabled>false</offlineEnabled>
+        <isCustom>false</isCustom>
+    </interface>
+    <roleMap public="true">
+        <role inherit="true" allowForAll="false" name="readers">
+            <users/>
+            <groups/>
+        </role>
+        <role inherit="true" allowForAll="false" name="authors">
+            <users/>
+            <groups/>
+        </role>
+        <role inherit="true" allowForAll="false" name="administrators">
+            <users/>
+            <groups/>
+        </role>
+        <role inherit="false" allowForAll="false" name="denyReaders">
+            <users/>
+            <groups/>
+        </role>
+        <role inherit="false" allowForAll="false" name="denyAuthors">
+            <users/>
+            <groups/>
+        </role>
+        <role inherit="false" allowForAll="false" name="denyAdministrators">
+            <users/>
+            <groups/>
+        </role>
+    </roleMap>
+    <history>
+        <historyInfo versionUuid="_a-0000edd6-3328-8000-9c13-011c48011c48_17767"/>
+    </history>
+</contentHaul>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<groupHaul xmlns:a="http://www.appian.com/ae/types/2009">
+    <versionUuid>0cda062f-00c0-40cd-aab7-e8e40f3ae4e3</versionUuid>
+    <group>
+        <name>PU Users</name>
+        <securityMap>SECURITYMAP_TEAM</securityMap>
+        <uuid>0cda062f-00c0-40cd-aab7-e8e40f3ae4e3</uuid>
+        <groupTypeUuid>SYSTEM_GROUP_TYPE_CUSTOM</groupTypeUuid>
+        <description>Assigns Viewer permissions to users for objects in the application</description>
+        <delegatedCreation>false</delegatedCreation>
+        <memberPolicy>MEMBERPOLICY_CLOSED</memberPolicy>
+        <viewingPolicy>VIEWINGPOLICY_LOW</viewingPolicy>
+        <attributes/>
+    </group>
+    <members>
+        <users/>
+        <groups>
+            <groupUuid>adea929e-0a7a-481a-ad48-9725dbeb3c8d</groupUuid>
+        </groups>
+    </members>
+    <admins>
+        <users/>
+        <groups>
+            <groupUuid>adea929e-0a7a-481a-ad48-9725dbeb3c8d</groupUuid>
+        </groups>
+    </admins>
+    <ruleSet/>
+    <history>
+        <historyInfo versionUuid="0cda062f-00c0-40cd-aab7-e8e40f3ae4e3"/>
+    </history>
+</groupHaul>
