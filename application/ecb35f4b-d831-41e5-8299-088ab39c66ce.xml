@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <applicationHaul xmlns:a="http://www.appian.com/ae/types/2009">
-    <versionUuid>_a-0000edd7-8483-8000-9c15-011c48011c48_18196</versionUuid>
+    <versionUuid>_a-0000ede2-1020-8000-9c21-011c48011c48_19260</versionUuid>
     <application>
         <name>Personalization Utils</name>
         <uuid>ecb35f4b-d831-41e5-8299-088ab39c66ce</uuid>
@@ -53,6 +53,7 @@
                         <uuid>b30dbf05-8554-40c3-bb87-7f75fa9f2ff1</uuid>
                         <uuid>_a-0000edd6-3328-8000-9c13-011c48011c48_17756</uuid>
                         <uuid>_a-0000edd7-8483-8000-9c15-011c48011c48_18105</uuid>
+                        <uuid>_a-0000ede2-1020-8000-9c21-011c48011c48_19255</uuid>
                     </uuids>
                 </item>
                 <item>
@@ -397,6 +398,7 @@
         <historyInfo versionUuid="ecb35f4b-d831-41e5-8299-088ab39c66ce"/>
         <historyInfo versionUuid="_a-0000edd7-8483-8000-9c15-011c48011c48_18110"/>
         <historyInfo versionUuid="_a-0000edd7-8483-8000-9c15-011c48011c48_18196"/>
+        <historyInfo versionUuid="_a-0000ede2-1020-8000-9c21-011c48011c48_19260"/>
     </history>
     <postDeploymentProcessData/>
     <requirementsCaptureB64 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
